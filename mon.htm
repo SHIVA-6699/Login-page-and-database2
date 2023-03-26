@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/2a1889b53c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/mon.css">
+    <link rel="javascript/text" href="/first.js">
+    <title>Document</title>
+</head>
+<body>
+    <h3 id="top">PROJECT NAME</h3>
+    <input type="checkbox" id="ch">
+    <label for="ch">
+        <i class="fas fa-bars" id="sh"></i>
+        <i class="fas fa-times" id="iv"></i>
+    </label>
+    <div class="side">
+   <header>menu</header>
+        <ul>
+            <li><a href="#"><i class="fas fa-home"></i>Home</a></li>
+            <li><a href="#"><i class="fas fa-qrcode"></i>Details</a></li>
+            <li><a href="#"><i class="fas fa-link"></i>CONATACT</a></li>
+            <li><a href="/index.html"><i class="fas fa-stream"></i>LOGIN</a></li>
+            <li><a href="#"><i class="fas fa-question-circle"></i>About</a></li>
+            <li><a href="#" onclick="add()"><code>        </code>🌙<i class="fa-solid fa-light-switch"></i>Darkmode</a></li>
+            <li><a href="#"><i class="fas fa-envelope"></i>Claendar <span class='spa'><input type="date"></span></a></li>
+        </ul>
+        
+        
+    
+            
+
+        <div class="notification" data-count="44" title="Total registrations">
+            <i class="fa-solid fa-bell" title="Total registrations" id="itag"></i>
+        </div>
+
+<script>
+    function loadDoc() {
+        
+    var updat=document.querySelector(".notification");
+    
+setInterval(function()
+{
+    var xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+           
+            updat.setAttribute("data-count",this.responseText);
+        }
+    };
+    xhttp.open("GET", "notification.php", true);
+    xhttp.send();
+},1000);
+
+   
+}
+loadDoc();
+window.onclick=kri;
+
+    function add()
+    {
+        var ele=document.body;
+        ele.classList.toggle('dark');
+        document.getElementById('reg').style.color="Magenta";
+    }
+    function btn1()
+    {
+        location="https://techcanvass.com/Courses/domain-training-courses.aspx"
+    }
+        
+        
+function kri()
+{
+         
+            var date=new Date();  
+            var da=date.getDate();
+            var mon=date.getMonth()+1;
+            var year=date.getFullYear();
+            var day=date.getDay();
+            switch(day)
+            {
+                case 1:
+                    day="Monday";
+                    break;
+                case 2:
+                    day="Tuseday";
+                    break;
+                case 3:
+                    day="Wednesday";
+                    break;
+                case 4:
+                    day="Thursday"
+                    break;
+                case 5:
+                    day="Friday";
+                    break;
+                case 6:
+                    day="Satarday";
+                    break;
+                case 7:
+                    day="Sunday";
+                    break;
+            }
+
+                
+        
+
+
+     
+function sleep(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
+  }
+
+    async  function mad()
+    {
+      
+
+        while(true)
+        {
+            
+            var date=new Date();
+            var da=date.getDate();
+    var sec=date.getSeconds();
+    var min=date.getMinutes();
+    var hour=date.getHours()%12;
+    var les="";
+    if(hour<12)
+    {
+        les="AM"
+    }
+    else
+    {
+        les="PM"
+    }
+    
+     await  sleep(1000);
+     document.getElementById('pra2').innerHTML="<P>"+da+"/"+mon+"/"+year+"/"+day+"</p>" 
+     document.getElementById('pra').innerHTML='<p>'+hour+":"+min+":"+sec+" "+les+"</p>"
+        
+        
+
+        }
+    }
+
+mad()
+}
+        
+    
+
+
+</script>
+
+
+    </div>
+    <nav>
+    <a href="#">Home</a>
+    <a href="#">Details</a>
+    <a href="#">Acoount</a>
+    <a href="/index.html">Logout</a>
+    </nav>
+<div class="imag">
+    <img src="e-learning_1.jpg" alt="">
+</div>
+    <h1>6 To 10</h1>
+
+
+<!-- flip cards -->
+<div class="container">
+<center></center>
+    <div class="rotate">
+        <div class="back1"> <button class="btn1" onclick="btn1()">GET CERTIFICATE</button></div>
+      
+    </div> 
+    <div class="rotate1">
+        
+        <div class="back2"><button class="btn1" onclick="btn1()">GET CERTIFICATE</button></div>
+    </div> 
+    <div class="rotate2">
+        <div class="back3"><button class="btn1" onclick="btn1()">GET CERTIFICATE</button></div>
+      
+    </div> 
+    <div class="rotate3">
+        <div class="back4"><button class="btn1" onclick="btn1()">GET CERTIFICATE</button></div>
+      
+    </div> 
+    <div class="rotate4">
+        <div class="back5"><button class="btn1" onclick="btn1()">GET CERTIFICATE</button></div>
+      
+    </div> 
+    <div class="rotate5">
+        <div class="back6"><button class="btn1" onclick="btn1()">GET CERTIFICATE</button></div>
+      
+    </div> 
+    <div class="rotate6">
+        <div class="back7"><button class="btn1" onclick="btn1()">GET CERTIFICATE</button></div>
+      
+    </div> 
+    <div class="rotate7">
+        <div class="back8"><button class="btn1" onclick="btn1()">GET CERTIFICATE</button></div>
+      
+    </div> 
+    <div class="rotate8">
+        <div class="back9"><button class="btn1" onclick="btn1()">GET CERTIFICATE</button></div>
+      
+    </div> 
+ </div>
+ <!-- down arrow -->
+
+<a class="anc" href="#top"><i class="fas fa-arrow-up"></i></a>
+<!-- registration from -->
+<section class="sec">
+ 
+<fieldset class="reg" ><legend>Registration</legend>
+<label for="names">Enter your name</label><br>
+<input type="text"><br>
+ <label for="emai">user_id</label><br>
+ <input type="email" name="" id="emai"><br>
+ <label for="pass">password</label><br>
+<input type="passwrod" id="pass"><br>
+<label for="adderss"></label><br>
+<address>
+    address <br>
+    <textarea placeholder="👉"></textarea><br>
+</address>
+<label for="state">Select your state</label><br>
+<input list="sta" id="stat" name="stat"><br>
+<datalist id="sta">
+    <option value="Andhra Pradesh"></option>
+    <option value="Arunachal Pradesh"></option>
+    <option value="Assam"></option>
+    <option value="Bihar"></option>
+    <option value="Chhattisgarh"></option>
+    <option value="Goa"></option>
+    <option value="Gujarat"></option>
+    <option value="Haryana"></option>
+    <option value="Himachal Pradesh"></option>
+    <option value="Jharkhand"></option>
+    <option value="Karnataka"></option>
+    <option value="Kerala"></option>
+    <option value="Madhya Pradesh"></option>
+    <option value="Maharashtra"></option>
+    <option value="Manipur"></option>
+    <option value="Meghalaya"></option>
+    <option value="Mizoram"></option>
+    <option value="Nagaland"></option>
+    <option value="Odisha"></option>
+    <option value="Punjab"></option>
+    <option value="Rajasthan"></option>
+    <option value="Sikkim"></option>
+    <option value="Tamil Nadu"></option>
+    <option value="Telangana"></option>
+    <option value="Tripura"></option>
+    <option value="Uttar Pradesh"></option>
+    <option value="Uttarakhand"></option>
+    <option value="West Bengal"></option>
+
+</datalist>
+<br>
+<label for="">Mobile number</label><br>
+<input type="tel" id="telphone">
+<br>
+<br>
+<br>
+<button type="submit" class="btn2">Sheadule a Free Class</button>
+</fieldset>
+</section>
+<div class="rock">
+
+        <p id="pra2"></p>
+        <p id="pra" ></p>
+    </div>
+
+
+</body>
+</html>

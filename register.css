@@ -1,0 +1,282 @@
+.image
+{
+background-image: url('/background.jpg');
+background-repeat: no-repeat;
+background-position:center;
+background-size: cover;
+height: 745px;
+
+margin-top: -8px;
+margin-left: -8px;
+margin-right: -8px;
+
+filter: blur(2px);
+
+
+}
+body
+{
+    background-color: black;
+}
+body::-webkit-scrollbar
+{
+    display: none;
+}
+.container
+{
+  border: 2px solid rgb(254, 249, 249);
+  width: 400px;
+  height: 650px;
+  border-radius: 25px;
+  position: absolute;
+  left: 35%;
+  top:5%;
+ box-shadow: 1.5px 1.5px 1.5px aliceblue;
+ 
+  
+
+}
+#username
+{
+width: 300px;
+position: absolute;
+top:-17px;
+height: 40px;
+background:none;
+/* border: none;
+outline: none; */
+border: none;
+font-size: 14px;
+outline: none;
+z-index: 1;
+}
+h1
+{
+    text-transform: capitalize;
+
+    text-align: center;
+    user-select: none;
+    pointer-events: none;
+
+}
+.inputbox
+{
+    border-bottom: 2px solid white;
+    width: 300px;
+    margin-left: 49px;
+    position: absolute;
+    top:129px;
+    
+
+}
+.extra
+{
+    position:relative;
+    top:190px;
+}
+
+#label1
+{
+    transform: translateY(-50%);
+    user-select: none;
+    pointer-events: none;
+    position: relative;
+    top:-10px;
+    color:white;
+    font-size:18px;
+    transition: all ease 0.5s;
+}
+#username:focus ~ #label1,
+
+#username:focus ~:valid
+{
+   position: relative;
+   top:-34px;
+   animation-name: ani;
+   animation-duration: 2s;
+   
+}
+.inputbox1
+{
+position: absolute;
+top:209px;
+border-bottom: 2px solid white;
+width: 300px;
+margin-left: 45px;
+}
+#label2
+{
+    transform: translateY(-50%);
+    user-select: none;
+    pointer-events: none;
+    position: relative;
+    top:-10px;
+    color:white;
+    font-size:18px;
+    transition: all ease 0.5s;
+   
+
+}
+#input2
+{
+    width: 300px;
+    position: absolute;
+    top:-25px;
+    height: 40px;
+    left: 0px;
+    background: transparent;
+    border: none;
+    outline: none;
+  
+    font-size: 20px;
+    
+    z-index: 1;
+}
+#input2:focus ~ #label2
+{
+   position: relative;
+   top:-39px;
+ 
+}
+.next
+{
+    position: relative;
+    top:350px;
+    width: 290px;
+    height: 49px;
+    margin-left: 56px;
+    border-radius: 19px;
+    cursor: pointer;
+    background: linear-gradient(30deg, rgba(255, 0, 0, 0.51), rgba(39, 44, 39, 0.455), rgba(20, 27, 162, 0.564));
+    border: 2px solid white;
+    color:white;
+}
+.forget
+{
+    position: relative;
+    top:380px;
+    color:white;
+    left:40px;
+}
+.for
+{
+    position: relative;
+    top:200px;
+    color:rgb(206, 207, 227);
+    left:270px; 
+    font-size: 17px;
+}
+.reg a
+{
+    position: relative;
+  
+    color:aliceblue;
+  
+    font-size: 17px; 
+}
+.reg
+{
+    position: relative;
+    top:400px;
+    color:aliceblue;
+    left:90px; 
+    text-decoration: none;
+    font-size: 17px; 
+}
+.inputbox3
+{
+    border-bottom: 2px solid white;
+     position: absolute;
+     width: 300px;
+     top:245px;
+     margin-left: 40px;
+
+}
+#label3
+{
+    position: relative;
+    top:-9px;
+    font-size: 18px;
+    transform: translateY(-50%);
+    color: white;
+    transition: all ease 0.5s;
+}
+#input3
+{
+    width:100%;
+    height:40px;
+    position: relative;
+    top:22px;
+    outline: none;
+    border: none;
+    background: none;
+    font-size: 18px;
+    z-index: 1;
+}
+#input3:focus ~#label3,
+#input3:focus ~:valid
+{
+    position: relative;
+    top:-39px;
+}
+
+.inputbox4
+{
+    position: absolute;
+    top:340px;
+    border-bottom: 1px solid white;
+    width: 300px;
+    margin-left: 40px;
+
+}
+#label4
+{
+    position: relative;
+    top:-9px;
+    color: white;
+    transform: translateY(-50%);
+    transition: all ease 0.5s;
+    font-size: 18px;
+   
+}
+#input2:valid ~#label2,
+#username:valid~#label1,
+#input3:valid~#label3,
+#input4:valid~#label4
+{
+   top: -39px;
+}
+#input4 
+{
+    width: 100%;
+    height:30px;
+    position: relative;
+    top: 22px;
+    border: none;
+    outline: none;
+    background:none;
+    z-index: 1;
+    font-size: 3px;
+    color:white;
+}
+#input4:focus ~#label4,
+#input4:focus ~:valid
+{
+    position: relative;
+    top:-39px;
+}
+.forget #check
+{background-color: rebeccapurple;
+    
+}
+#eyebtn
+{
+    position: relative;
+    top:39px;
+    
+    z-index: 11;
+    outline: none;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
